@@ -9,22 +9,26 @@ export default function Footer({ className = '' }) {
         <div className="flex flex-col md:flex-row justify-between items-start mb-16">
           {/* Left Side - Logo and Description */}
           <div className="max-w-md ml-5 mt-5 mb-8 md:mb-0">
-            <img src="/images/edaptify.svg" alt="Edaptify" width={200} />
-            <p className="text-white/90 text-lg leading-relaxed mb-6">
+            <img src="/images/edaptify.svg" alt="Edaptify" width={300} />
+            <p className="text-white/90 text-lg leading-relaxed font-bold italic mb-6">
               Empowering learners worldwide with high-quality, accessible online
               education. Join thousands of students on their journey to success.
             </p>
             <a
               href="/about"
-              className="text-white underline hover:text-white/80 transition-colors text-lg font-medium"
+              className="text-white underline hover:text-white/80 transition-colors text-lg font-extrabold"
             >
               About Us
             </a>
           </div>
         </div>
 
-        <div className="relative flex justify-center items-center max-w-full">
-          <img src="/images/logostroked.svg" alt="Edaptify" />
+        <div className="relative flex justify-center items-center w-full m-0">
+          <img
+            src="/images/logostroked.svg"
+            alt="Edaptify"
+            className="w-full h-auto object-contain"
+          />
         </div>
 
         {/* Bottom Section */}
@@ -85,4 +89,4 @@ export default function Footer({ className = '' }) {
       </div>
     </footer>
   );
-};
+}

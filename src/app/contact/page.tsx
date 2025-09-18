@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Navbar } from '@/components/Navbar';
-import { Footer } from '@/components/Footer';
+import { Navbar } from '@/components/navbar/Navbar';
+import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';

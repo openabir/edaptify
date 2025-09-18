@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Navbar } from '@/components/Navbar';
-import { Footer } from '@/components/Footer';
+import { Navbar } from '@/components/navbar/Navbar';
+import Footer from '@/components/Footer';
 import { CourseCard } from '@/components/CourseCard';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
