@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F9F9F9; /* Off-White */
+  --foreground: #2D2D2D; /* Charcoal */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Custom gradient definitions */
+.gradient-hero {
+  background: linear-gradient(90deg, #FF6B6B, #FFD93D);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.gradient-coral-yellow {
+  background: linear-gradient(135deg, #FF6B6B, #FFD93D);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #4D96FF, #6BCB77);
+}
+
+/* Border styles for consistency */
+.border-thick {
+  border-width: 4px;
+  border-color: #1E1E3F;
+}
+
+.border-thick-primary {
+  border-width: 4px;
+  border-color: #FF6B6B;
+}
+
+/* Text contrast utilities */
+.text-accessible-light {
+  color: #2D2D2D; /* Dark text on light backgrounds */
+}
+
+.text-accessible-dark {
+  color: #F9F9F9; /* Light text on dark backgrounds */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ensure good contrast for accessibility */
+.bg-neutral-100 {
+  color: #2D2D2D;
+}
+
+.bg-neutral-800, .bg-border {
+  color: #F9F9F9;
 }
