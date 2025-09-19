@@ -46,10 +46,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={inter.className}>
         <AuthProvider>
           <Navbar />
-          {children}
+          <main className="pt-20">{children}</main>
         </AuthProvider>
       </body>
     </html>
